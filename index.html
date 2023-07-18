@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aartas admin dashboard | Home</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header bg-primary">
+      <div class="container-fluid">
+        <div class="row py-2 mb-0">
+          <!-- Admin Name -->
+          <div class="col-lg-2 pt-4">
+            <h6 class="fw-bold mb-0">Ayush Sharma</h6>
+            <small class="text-secondary">superadmin</small>
+          </div>
+          <!-- Menus -->
+          <div
+            class="menu col-lg-7 d-flex justify-content-center align-items-center text-center pe-5"
+          >
+            <div class="m-auto">
+              <i
+                class="fa-regular fa-calendar-days text-secondary fa-2x btn btn-secondary-light"
+              ></i>
+              <p class="fw-bold fs-6">Today</p>
+            </div>
+            <div class="m-auto">
+              <i
+                class="fa-solid fa-list-check text-secondary fa-2x btn btn-secondary-light"
+              ></i>
+              <p class="fw-bold fs-6">Appointments</p>
+            </div>
+            <div class="m-auto">
+              <i
+                class="fa-solid fa-hospital-user text-secondary fa-2x btn btn-secondary-light"
+              ></i>
+              <p class="fw-bold fs-6">Patients</p>
+            </div>
+            <div class="m-auto">
+              <i
+                class="fa-solid fa-stethoscope text-secondary fa-2x btn btn-secondary-light"
+              ></i>
+              <p class="fw-bold fs-6">Doctors</p>
+            </div>
+            <div class="m-auto">
+              <i
+                class="fa-solid fa-indian-rupee-sign text-secondary fa-2x btn btn-secondary-light"
+              ></i>
+              <p class="fw-bold fs-6">DSR</p>
+            </div>
+            <div class="m-auto">
+              <i
+                class="fa-solid fa-pills text-secondary fa-2x btn btn-secondary-light"
+              ></i>
+              <p class="fw-bold fs-6">Pharmacy</p>
+            </div>
+            <div class="m-auto">
+              <i
+                class="fa-regular fa-clipboard text-secondary fa-2x btn btn-secondary-light"
+              ></i>
+              <p class="fw-bold fs-6">Reports</p>
+            </div>
+          </div>
+          <!-- Search box -->
+          <div class="col-lg-3 pt-4">
+            <form class="d-flex">
+              <input
+                class="form-control me-2 bg-primary-dark border-top-0 border-start-0 border-end-0 rounded-1 border-muted"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                id="btn"
+                class="btn btn-secondary text-light add-btn"
+                type="submit"
+              >
+                <nobr>+ Add</nobr>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Doctor section -->
+    <section class="doctor-name py-4">
+      <div class="container-fluid bg-white">
+        <!-- Doctor row 1 -->
+        <div class="row">
+          <div
+            class="d-flex sm-auto gap-3 btn-group btn-group-sm text-wrap justify-content-center"
+            role="group"
+          >
+            <button
+              type="button"
+              class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Vidya Taneja"
+            >
+              <nobr>Dr. Vidya Taneja</nobr>
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Suparno Chakrabarti"
+            >
+              <nobr>Dr. Suparno Chakrabarti</nobr>
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Arushi Dudeja"
+            >
+              <nobr>Dr. Arushi Dudeja</nobr>
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Chirag Bhandari"
+            >
+              <nobr>Dr. Chirag Bhandari</nobr>
+            </button>
+          </div>
+        </div>
+         <!-- Doctor row 2 -->
+        <div class="row">
+          <div
+            class="d-flex sm-auto gap-3 btn-group btn-group-sm text-wrap text-center"
+            role="group"
+          >
+          <button
+            type="button"
+            class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Amit Kumar Yadav"
+          >
+            <nobr>Dr. Amit Kumar Yadav</nobr>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Abhishek Goyal"
+          >
+            <nobr>Dr. Abhishek Goyal</nobr>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Shekhar Srivastav"
+          >
+            <nobr>Dr. Shekhar Srivastav</nobr>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary bg-white border-0 btn-doc" value="Dr. Akhil Agnihotri"
+          >
+            <nobr>Dr. Akhil Agnihotri</nobr>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slot section -->
+    <section class="slots my-0">
+      <div class="row flex-column">
+        <!-- Room slot -->
+        <div class="col-lg-3">
+          <div
+            class="card bg-primary d-flex flex-row gap-2 border-0 rounded-2 m-3"
+          >
+            <span class="m-3 fw-bold"> Room</span>
+            <input
+              class="form-control me-1 bg-primary-dark border-top-0 border-start-0 border-end-0 rounded-1 border-muted m-auto w-25 center-placeholder"
+              type="text"
+              placeholder="1"
+              aria-label="1"
+            />
+            <button type="button" class="btn m-auto rounded-5  " id="transparentButton">
+              <i class="fa-solid fa-2x fa-circle-play"></i>
+            </button>
+
+            
+          </div>
+        </div>
+        <!-- Time slot with modal -->
+        <div class="col-lg-3 d-flex">
+          <!-- Button trigger modal -->
+          <span class="m-3 fw-bold">Time Slots Available</span>
+          <button
+            type="button"
+            class="btn btn-primary center-icon-text bg-white border-0 fw-bold w-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="transparentButton2"
+          >
+            <i class="fa-regular fa-circle-plus fa-2x"></i>
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog mt-8 border-0">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title px-6" id="exampleModalLabel">
+                    Quick Add TimeSlots
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close "
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <i class="fa-solid fa-location-dot fa-1x"></i> Aartas
+                    ClinicShare Delhi Ring Road, Delhi
+                  </p>
+                </div>
+                <div class="input-group w-75 gap-3 mb-3 align-items-center">
+                  <input
+                    type="text"
+                    aria-label="First name"
+                    class="form-control w-25 bg-primary border-2 rounded-2"
+                    placeholder=""
+                    style="text-align:left"
+                    id="nameInput" readonly
+                  />
+                  <input
+                    type="text"
+                    aria-label="Last name"
+                    class="form-control w-25 bg-primary border-2 rounded-2"
+                    placeholder=""
+                    id="dateInput" readonly
+                  />
+                </div>
+                <div class="input-group gap-3 w-75">
+                  <input
+                    type="text"
+                    aria-label="First name"
+                    class="form-control first w-25 bg-primary border-2 rounded-2 border-dark"
+                    style="font-family: Arial, FontAwesome"
+                    placeholder="--: -- --"
+                  />
+                  <input
+                    type="text"
+                    aria-label="Last name"
+                    class="form-control second w-25 bg-primary border-2 rounded-2 border-dark"
+                    style="font-family: Arial, FontAwesome"
+                    placeholder="--: -- --"
+                  />
+                  
+                </div>
+                <div class="modal-footer text-center">
+                  <button
+                    type="button"
+                    class="btn btn-dark add-btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Done
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Available time slots -->
+        <div class="col-lg-3 m-3">
+          <button type="button" class="btn btn-outline-dark add-btn">11:45 AM</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointments -->
+    <section class="appointments py-3">
+      <div class="container-fluid"> 
+        <h5 class="fw-bold">Appointments</h5>
+        <!-- Appointments menu -->
+        <div class="row">
+          <div
+            class="footer d-flex mt-0 m-3"
+          >
+          <div class="col-lg-4 d-flex"> <div class="me-auto">
+            <p class="text-muted">Update</p>
+            
+
+            <button type="button" class="btn btn-outline-dark add-btn rounded-5 btn-sm border-0"><i class="fa-regular fa-pen-to-square fa-2x"></i></button>
+          </div>
+          <div class="me-auto">
+            <p class="text-muted">Time</p>
+            <h6>10:00 AM</h6>
+          </div>
+          <div class="me-auto">
+            <p class="text-muted">Patients</p>
+            <h6>Kate Bell</h6>
+            <span class="text-secondary">(415) 555-3695</span>
+          </div></div>
+          
+          <div class="col-lg-4 d-flex"> <div class="me-auto">
+            <p class="text-muted mb-4">Status</p>
+            <span
+              ><i class="fa-solid fa-circle text-search"></i>&nbsp;
+              Booked</span
+            >
+          </div>
+          <div class="me-auto">
+            <p class="text-muted">Amount</p>
+            <h6>₹ 1500</h6>
+            <span class="pending text-secondary">Pending ₹1500</span>
+          </div><div class="me-auto">
+            
+            <p class="text-muted">Vitals</p>
+           
+              <i class="fa-solid fa-heart-pulse fa-2x"></i>
+           
+            
+          </div> </div>
+          <div class="col-lg-4 d-flex mx-3">
+          <div class="me-auto">
+            <p class="text-muted">Bill</p>
+            <i class="fa-solid fa-indian-rupee-sign fa-2x"></i>
+          </div>
+          <div class="me-auto">
+            <p class="text-muted">Consumables</p>
+            <i class="fa-solid fa-indian-rupee-sign fa-2x"></i
+            ><sup class="text-secondary">0</sup>
+          </div>
+          <div class="me-auto">
+            <p class="text-muted">more</p>
+            
+            <button type="button" class="btn btn-outline-dark add-btn rounded-5 btn-sm"><i class="fa-solid fa-bars fa-1x"></i></button>
+          </div></div>
+           
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

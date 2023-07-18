@@ -1,0 +1,110 @@
+.btn {
+  background: transparent;
+  border-radius: 8px !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.btn:hover {
+  background-color: #e8ad98 !important;
+}
+
+.add-btn:hover {
+  background-color: #6d2110 !important;
+}
+
+.form-control {
+  background-color: #e4e4e4 !important;
+  color: #757575;
+}
+
+.btn-doc {
+  background: transparent;
+  border-radius: 4px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn-doc:hover {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
+
+.center-placeholder ::-webkit-input-placeholder {
+  text-align: center !important;
+}
+
+.center-placeholder input {
+  text-align: center !important;
+}
+
+.center-icon-text {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.center-icon-text .icon {
+  margin-right: 5px !important;
+}
+
+.modal-dialog .modal-content {
+  background-color: #ebe8e8 !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  row-gap: 1;
+}
+
+sup {
+  top: -2em !important;
+}
+
+#transparentButton {
+  background-color: transparent !important;
+}
+
+#transparentButton2 {
+  background-color: transparent !important;
+}
+
+input {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .doctor-name .row div {
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .slots {
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
